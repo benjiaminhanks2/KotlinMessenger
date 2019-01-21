@@ -2,7 +2,6 @@ package com.rishstudio.kotlinmessenger
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
@@ -16,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         dont_have_account_textview.setOnClickListener {
-            val signupIntent = Intent(this, MainActivity::class.java)
+            val signupIntent = Intent(this, RegisterActivity::class.java)
             startActivity(signupIntent)
         }
 
